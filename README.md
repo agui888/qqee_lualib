@@ -90,7 +90,7 @@ local bool=qqee.chmod("Z:\\TEMP",777)
 qqee.sleep(1000) --ms
 ```
 
-* socket. (luasocket lite version.) <a href="http://w3.impa.br/~diego/software/luasocket/">[Go to the document page]</a>
+* socket. (luasocket lite version.) <a href="http://w3.impa.br/~diego/software/luasocket/">[Home-page]</a>  <a href="http://w3.impa.br/~diego/software/luasocket/socket.html">[Document-SOCKET]</a>  <a href="http://w3.impa.br/~diego/software/luasocket/tcp.html">[Document-TCP]</a>  <a href="http://w3.impa.br/~diego/software/luasocket/udp.html">[Document-UDP]</a>  <a href="http://w3.impa.br/~diego/software/luasocket/dns.html">[Document-DNS]</a>
 
 ```lua
 local socket=require"socket"
