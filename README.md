@@ -17,7 +17,7 @@
 
 ####2/3. How use it ?    
 
-* 1/4. Download qqee_lualib package and extract it. <a href="http://www.1.com/1.zip">[Click To Download]</a>  
+* 1/4. Download qqee_lualib package and extract it. <a href="https://github.com/qqee/qqee_lualib/archive/master.zip">[Click To Download]</a>  
 
 * 2/4. Select luajit executable file ( ./bin/ directory ) and copy to the directory where the [README.md] was located.
 
