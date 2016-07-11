@@ -193,7 +193,7 @@ function osinfo()
 end
 
 local osname,arch=osinfo() --windows x86
-print(osname,arch)
+--print(osname,arch)
 local libname="?.so"
 if osname=="windows" then
 	libname="?.dll"
@@ -201,9 +201,9 @@ elseif osname=="osx" then
 	libname="?.dylib"
 end
 
-print(package.cpath)
+--print(package.cpath)
 package.cpath='lib/'..osname..'/'..arch..'/'..libname..';lib/'..osname..'/'..libname
-print(package.cpath)
+--print(package.cpath)
 
 
 local __json=require"json"

@@ -4,8 +4,6 @@ local gd=require"gd"
 -----------------------------------------------------------------------
 print(osinfo())
 print_r(gd)
-print(gd.createFromJpeg)
-
 -----------------------------------------------------------------------
 local magics = {
 	{ "\137PNG", gd.createFromPng },
@@ -31,7 +29,7 @@ local function openimg(fname)
 	end
 	return nil, "Image type not recognized"
 end
-
+-----------------------------------------------------------------------
 
 
 local im = openimg("./1.jpg")

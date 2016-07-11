@@ -2,7 +2,7 @@
 
 ***
 
-### Luajit framework (cross platform). Same code runs in different OS.
+### Luajit framework (cross platform & <2MB). Same code runs in different OS.
 ###### Windows / Linux / OSX / OpenWrt / BSD
 
 ***
@@ -25,9 +25,13 @@
 
 * 4/4. Read [demo.*.lua] files. Write your own code. run it with [./luajit yourcode.lua].
 
+* Compiled to byte-code : [./luajit -b file.lua compiled.lua].
+
+* Delete [./jit/] directory.
+
 ####3/3. APIs list.
 
-* lib. (Must be loaded first)
+* lib. (Must be loaded first. Pure Lua code.)
 
 ```lua
 require"lib"
@@ -47,7 +51,7 @@ jsondecode(string)
 md5(str)
 ```
 
-* www_qq_ee.   
+* www_qq_ee. (Pure C code.)
 
 ```lua
 local qqee=require"www_qq_ee"
@@ -62,7 +66,7 @@ local str=qqee.trimall("  ABC EF  ")
 local true_false=qqee.stringisnumber("123456789")
 local arr=qqee.split("a,b,c,d,e",",")
 local t_us=qqee.us() --length 13
-local zone=qqee.timezone() ---12~12
+local zone=qqee.timezone() -- -12~12
 local str=qqee.upper("abcdef")
 local str=qqee.lower("ABCDEF")
 local sha=qqee.sha1("abcdef")
